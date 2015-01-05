@@ -158,11 +158,12 @@ class PyLuaTblParser():
 					value, beg = self.parseTable(s, beg)
 					di[maxn] = value
 					maxn += 1
+				# is lua string
 				elif self.equals(s, beg, beg+2, "[["):
 					value, beg = self.parseString(s, beg)
 					di[maxn] = value
 					maxn += 1
-				# is a [key] = value, pair
+				# is a ([key] = value) pair
 				elif s[beg] == '[':
 					# parse key
 					isList = False
