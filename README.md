@@ -28,11 +28,11 @@
    # import the PyLuaTblParser
    import PyLuaTblParser as P
    parser = P.PyLuaTblParser()
-   test_str = '{array = {65,23,5,},dict = {mixed = {43,54.33,false,9,string = "value",},array = {3,6,4,},string = "value",},}'
-   # load the test_str to parser.data
-   parser.load(test_str)
-   # dump the parser.data to test_str1
-   test_str1 = parser.dump()
+   teststr = '{array = {65,23,5,},dict = {mixed = {43,54.33,false,9,string = "value",},array = {3,6,4,},string = "value",},}'
+   # load the teststr to parser.data
+   parser.load(teststr)
+   # dump the parser.data to teststr1
+   teststr1 = parser.dump()
    # dump the parser.data to test.txt
    parser.dumpLuaTable("test.txt")
    # load the lua table string from test.txt
