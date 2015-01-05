@@ -151,7 +151,7 @@ class PyLuaTblParser():
 					beg += 1
 			else:
 				if twoKV: raise LuaError()
-				twoKv = True
+				twoKV = True
 				twoDt = False	
 				# is a new table
 				if s[beg] == '{':
