@@ -24,7 +24,7 @@
 8. d = parser.dumpDict() --this dump the parser.data to d, this create a deep copy of
    parser.data
 
-## example
+### example
    -- import the PyLuaTblParser
    import PyLuaTblParser as P
    parser = P.PyLuaTblParser()
