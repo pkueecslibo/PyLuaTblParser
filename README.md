@@ -25,22 +25,22 @@
    parser.data
 
 ## example
-   # import the PyLuaTblParser
+   -- import the PyLuaTblParser
    import PyLuaTblParser as P
    parser = P.PyLuaTblParser()
    teststr = '{array = {65,23,5,},dict = {mixed = {43,54.33,false,9,string = "value",},array = {3,6,4,},string = "value",},}'
-   # load the teststr to parser.data
+   -- load the teststr to parser.data
    parser.load(teststr)
-   # dump the parser.data to teststr1
+   -- dump the parser.data to teststr1
    teststr1 = parser.dump()
-   # dump the parser.data to test.txt
+   -- dump the parser.data to test.txt
    parser.dumpLuaTable("test.txt")
-   # load the lua table string from test.txt
+   -- load the lua table string from test.txt
    parser.loadLuaTable("test.txt")
    d = {1: 'a', 2: 'one', 3: 'two', 4: 'three', 'y': 45, 'x': -63.75}
-   # load the dict d to parser.data, the old value in parser.data will be discard
+   -- load the dict d to parser.data, the old value in parser.data will be discard
    parser.loadDict(d)
-   # dump the parser.data to d,
+   -- dump the parser.data to d,
    d = parser.dumpDict()
 
 
